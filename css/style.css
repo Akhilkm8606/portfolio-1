@@ -114,7 +114,7 @@ body {
   .bg-img{
     max-width: 50%;
     min-height: 100vh;
-    background-image: url('/image/8ed2876dac7bfdd810bdb781d2723369.jpg');
+    background-image: url('./image/8ed2876dac7bfdd810bdb781d2723369.jpg');
     position: relative;
     background-repeat: no-repeat;
     background-size: 100% ;
