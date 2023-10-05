@@ -53,7 +53,7 @@ body {
   .bgimage{
     height: 100vh;
     
-    background-image: url('../image/circle-scatter-haikei.svg');    
+    background-image: url('/image/circle-scatter-haikei.svg');    
     background-size: cover;
     background-size: cover;
     position: sticky; 
