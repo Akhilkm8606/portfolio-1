@@ -53,8 +53,7 @@ body {
   .bgimage{
     height: 100vh;
     
-    background-image: url('../image/circle-scatter-haikei.svg');    
-    background-size: cover;
+    background-image: url(/image/circle-scatter-haikei.svg);    background-size: cover;
     background-size: cover;
     position: sticky; 
     
@@ -106,79 +105,120 @@ body {
  
   
   /*  ABOUT  */
-  #about{
-    height: 100vh;
+  #about {
+    height: 100%;
     background-color: rgb(1, 3, 21);
-
   }
-  
-  .bg-img{
-    max-width: 50%;
+
+  .container {
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-img {
+    max-width: 100%;
     min-height: 100vh;
-    background-image: url('../image/8ed2876dac7bfdd810bdb781d2723369.jpg');
-    position: relative;
+    background-image: url('/image/8ed2876dac7bfdd810bdb781d2723369.jpg');
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size: cover;
+    margin-top: 30px;
   }
-  
 
-
-.about-text{
-  margin-top: 2rem !important;
+  .about-text {
+    margin-top: 2rem;
     color: white;
-    font-size: 1.5rem; 
-     
-}
+    font-size: 1.5rem;
+  }
 
-  .ab-text1{
+  .ab-text1 {
     color: blueviolet;
     letter-spacing: 1rem;
-      margin: 1.3rem  !important;
-
+    margin: 1.3rem;
   }
-  .ab-text3 , .ab-text2{
-      margin: 1.3rem  !important;
-      background: linear-gradient(to right, #30CFD0 , rgb(215, 31, 92) );    
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
 
-    }  
-  
+  .ab-text3, .ab-text2 {
+    margin: 1.3rem;
+    background: linear-gradient(to right, #30CFD0, rgb(215, 31, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .bg-img {
+      min-height: 50vh !important;
+    }
+
+    .ab-text3,
+    .ab-text2 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+
   @media only screen and (max-width: 992px) {
-    .bg-img{
-      max-width: 100vw;
-      background-size: cover;
-      position: relative; 
-      background-repeat: no-repeat;
+    .bg-img {
+      min-height: 100vh;
     }
-    .ab-text3 , .ab-text2{
-      font-size: 1rem;
-      margin-top: 1rem !important;
 
+    .ab-text3,
+    .ab-text2 {
+      font-size: 1rem;
+      margin-top: 1rem;
     }
   }
   
-  #services .container-fluid{
-  
+  #services .container-fluid {
     background-color: rgb(1, 3, 21);
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  .serve{
+
+  .serve {
     min-height: 80vh;
 
   }
-.serve div{
-  border: 3px solid #b621be ;
-  width: 100%;
-  margin: 5px;
- padding: 3rem;  
-}
-.serve h3{
-  color: #2fc7d2;
+  .serve  h2{
+    margin-bottom: 20px !important;  }
 
-} 
+  .serve div {
+    border: 3px solid #b621be;
+    width: 100%;
+    margin: 5px;
+    padding: 4rem !important;
+  }
+
+  .serve h3 {
+    color: #2fc7d2;
+  }
+  @media only screen and (max-width: 768px) {
+    .serve div {
+      padding: 1rem !important;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    #services .container-fluid {
+    margin-top: 0;
+    }
+    .serve {
+      min-height: 30vh !important;
+      max-width: 100% !important;
+      margin-top: 15rem !important;
+    }
+
+    .serve div  {
+      padding: 1rem !important;
+      font-size: 15px;
+
+    }
+  }
   #contact .container-fluid{
     
     background-color: rgb(1, 3, 21);
@@ -211,13 +251,12 @@ body {
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(1fr));
     gap: 20px;
-    justify-content: center;
   }
   .grid-container div{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
   }
   
   
@@ -231,12 +270,12 @@ body {
   
   .grid-container input {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     text-align: center;
     border: none;
-    line-height: 50px;
-    border-radius: 1rem;
+    line-height: 38px;
+    border-radius: 0.2rem;
     border-bottom: 1px solid #fff;
     outline: none;
     background: #2fc7d2;
@@ -258,24 +297,27 @@ body {
     padding-bottom: 10px;
     font-weight: bolder;
   }
-  .name-ms input{
+  .name-ms textarea{
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     text-align: center;
     border: none;
-    line-height: 50px;
-    border-radius: 5rem;
+    line-height: 38px;
+    border-radius: 0.2rem;
     border-bottom: 1px solid #fff;
     outline: none;
     margin-bottom: 1.5rem;
     background: #2fc7d2;
+    height: 8rem;
 
   }
-  .name-ms input:focus,
-  .name-ms input:hover {
+  .name-ms textarea:focus,
+  .name-ms textarea:hover {
     background: linear-gradient(to right,rgb(75, 221, 231),rgb(137, 24, 172));
     transition: width 1s;
+        color: white;
+
   }
   .sub-btn {
     display: flex;
@@ -283,15 +325,14 @@ body {
   }
   
   .sub-btn .btn {
-    letter-spacing: 1rem;
+    letter-spacing: 0.8rem;
     text-transform: uppercase;
     position: relative;
-    width: 17rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 1px solid rgb(20, 19, 20) ;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem;
     transition: 0.5s;
-    font-weight: 500;
+    font-weight: 500px;
     box-shadow: 0 0 5px #b621be;
     text-shadow: 2px 3px  #b621be;
 
@@ -313,6 +354,9 @@ body {
       border-top: 2px  solid white;
       border-bottom: 2px  solid white;
       
+    }
+    .serve p{
+     font-size: 1.5rem;
     }
 
 
@@ -349,11 +393,9 @@ body {
  
 
   }
-  .serve{
-    min-height: 50vh !important;
-    max-width: 100% !important;
-    margin-top: 15rem!important;
-  }
+
+  
+  
 
        
         .section-box{
