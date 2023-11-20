@@ -55,24 +55,24 @@
       </div>
     </section>
     <!-- ABOUT  -->
-      <section id="about">
-        <div class="container">
-          
-          <div class="row" id="about-row">
-            <div class="bg-img col-md-6 col-sm-12   bg-body-secondary ">
-            </div>
-            <div class="about-text col-md-6 col-sm-12">
-              <h2 class="ab-text1"> ABOUT</h2>
-              <h1 class="ab-text2">Full Stack Developer in <span> M E R N</span></h1>
-              <h3 class="ab-text3 fw-lighter">
-                I am AKHIL KRISHNAN , a passionate Developer<strong> programming and design from the future</strong>. My
-                expertise is developing next-level websites and web applications including full frontend and backend
-                design
-              </h3>
-            </div>
+    <section id="about">
+      <div class="container">
+
+        <div class="row" id="about-row">
+          <div class="bg-img col-md-6 col-sm-12   bg-body-secondary ">
+          </div>
+          <div class="about-text col-md-6 col-sm-12">
+            <h2 class="ab-text1"> ABOUT</h2>
+            <h1 class="ab-text2">Full Stack Developer in <span> M E R N</span></h1>
+            <h3 class="ab-text3 fw-lighter">
+              I am AKHIL KRISHNAN , a passionate Developer<strong> programming and design from the future</strong>. My
+              expertise is developing next-level websites and web applications including full frontend and backend
+              design
+            </h3>
           </div>
         </div>
-      </section >
+      </div>
+    </section>
     <section id="services">
       <div class="container-fluid text-white ">
 
@@ -111,34 +111,43 @@
                 <form id="form">
                   <div class="grid-container">
                     <div class="name">
+                      <span id="submitErr" style="color: brown;"></span>
+
                       <label for="first-name">First Name</label>
                       <input type="text" id="first-name" onkeydown="validateName()" placeholder="Enter Your First Name">
-                      <span id="f-nameErr"style="color: brown;"></span>
+                      <span id="f-nameErr" style="color: brown;"></span>
                       <label for="last-name">Last Name</label>
-                      <input type="text" id="last-name"  onkeydown="validateName()"  placeholder="Enter Your Last Name">
-                      <span  id="l-nameErr"style="color: brown;display: inline;"></span>
+                      <input type="text" id="last-name" onkeydown="validateName()" placeholder="Enter Your Last Name">
+                      <span id="l-nameErr" style="color: brown;display: inline;"></span>
                     </div>
                     <div class="name">
                       <label for="email">Email</label>
-                      <input type="email" id="email"  onkeydown="validateMailAndNumber()" placeholder="Enter Your Email Address">
-                      <span id="emailErr"style="color: brown;"></span>
+                      <input type="email" id="email" onkeydown="validateMailAndNumber()"
+                        placeholder="Enter Your Email Address">
+                      <span id="emailErr" style="color: brown;"></span>
                       <label for="phone">Phone number</label>
-                      <input type="number" id="phone" onkeydown="validateMailAndNumber()" placeholder="Enter Your Phone Number">
+                      <input type="number" id="phone" onkeydown="validateMailAndNumber()"
+                        placeholder="Enter Your Phone Number">
                       <span id="numberErr" style="color: brown;"></span>
                     </div>
                   </div>
                   <div class="name-ms ">
                     <label for="message">Message</label>
-                    <textarea  class="w-100" type="text" id="message" placeholder="Enter Your Message"rows="4" cols="50"></textarea>
+                    <textarea class="w-100" type="text" id="message" placeholder="Enter Your Message" rows="4"
+                      cols="50"></textarea>
                     <span id="msgErr" style="color: brown;"></span>
                   </div>
-                  <div class="sub-btn ">
+                  <!-- ... your existing code ... -->
+
+                  <div class="sub-btn">
                     <a class="btn" href="#">
-                      <button type="button" id="btn" onclick="click()">Submit</button>
-                      <span id="submitErr"></span>
+                      <button type="submit" id="btn">Submit</button>
+                     
                     </a>
-                   
                   </div>
+
+                  <!-- ... your existing code ... -->
+
                 </form>
               </div>
             </div>
