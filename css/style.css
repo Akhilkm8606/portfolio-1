@@ -54,7 +54,7 @@ body {
     height: 100vh;
     
 
-      background-image: url('../image/8ed2876dac7bfdd810bdb781d2723369.jpg');
+     
        background-image: url(' image/8ed2876dac7bfdd810bdb781d2723369.jpg');
      
 
@@ -129,7 +129,7 @@ body {
   .bg-img {
     max-width: 100%;
     min-height: 100vh;
-    background-image: url('/image/8ed2876dac7bfdd810bdb781d2723369.jpg');
+    background-image: url('../image/8ed2876dac7bfdd810bdb781d2723369.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
